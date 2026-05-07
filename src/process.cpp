@@ -82,3 +82,8 @@ GameData ProcessZip::run(const string& path) {
     
     return output;
 }
+
+// Async version of the run function.
+std::future<GameData> ProcessZip::runAsync(const std::string& path) {
+    return std::async(std::launch::async, &ProcessZip::run, path);
+}
