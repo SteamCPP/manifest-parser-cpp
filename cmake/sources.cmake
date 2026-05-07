@@ -1,0 +1,8 @@
+set(MANIFESTPARSER_SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src)
+
+set(MANIFESTPARSER_SOURCES
+    ${MANIFESTPARSER_SOURCE_DIR}/process.cpp
+    ${MANIFESTPARSER_SOURCE_DIR}/split/split_manifests.cpp
+    ${MANIFESTPARSER_SOURCE_DIR}/lua/lua_parser.cpp
+    ${MANIFESTPARSER_SOURCE_DIR}/filter/filter_depots.cpp
+)
